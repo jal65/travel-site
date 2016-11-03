@@ -480,14 +480,15 @@ a {
 }
 
 .large-hero {
-    position: relative;
-    border-bottom: 10px solid #2f5572;
+  border-bottom: 10px solid #2f5572;
+  position: relative;
+
 }
 
 .large-hero__image {/* by default images are treated as in-line level elements 00 similar
-        to line of text so spaces are added to both extremes.
-        Setting as block level element those spaces are eliminated.
-        */
+      to line of text so spaces are added to both extremes.
+      Setting as block level element those spaces are eliminated.
+    */
   display: block;
 }
 
@@ -504,14 +505,8 @@ a {
 .large-hero__title {
   font-weight: 300;
   color: #2f5572;
+  margin: 0;
   font-size: 2.4rem;
-  margin: 0;/*@mixin atMedium {
-            font-size: 3.2rem;
-        }
-
-        @mixin atLarge {
-            font-size: 4.8rem;
-        }*/
 }
 
 @media (min-width: 530px) {
@@ -540,9 +535,9 @@ a {
   font-size: 1.1rem;
   font-weight: 100;
   text-shadow: 2px 2px 0 rgba(0, 0, 0, .1);
+  max-width: 30rem;
   margin-left: auto;
   margin-right: auto;
-  max-width: 30rem;
 }
 
 @media (min-width: 530px) {
@@ -553,11 +548,12 @@ a {
 }
 
 .btn {
-    background-color: #2f5572;
-    color: #FFF;
-    text-decoration:none;
-    padding: .75rem 1.2rem;
-    display: inline-block;
+  background-color: #2f5572;
+  color: #FFF;
+  text-decoration: none;
+  padding: .75rem 1.2rem;
+  display: inline-block;
+
 }
 
 .btn--orange {
@@ -575,14 +571,16 @@ a {
   }
 }
 
-.wrapper{
-    padding-left: 18px;
-    padding-right: 18px;
-    /* to hide negative margin-right of row--gutters class */
-    overflow: hidden;
-    max-width: 1236px;  /* 1200 + 36 for the 18px + 18px */
-    margin-left: auto;
-    margin-right: auto;
+.wrapper {
+  overflow: hidden;
+  padding-left: 18px;
+  padding-right: 18px;
+  /* to hide negative margin-right of row--gutters class */
+  max-width: 1236px;
+  /* 1200 + 36 for the 18px + 18px */
+  margin-left: auto;
+  margin-right: auto;
+
 }
 
 .wrapper--medium {
@@ -590,20 +588,23 @@ a {
 }
 
 .wrapper .wrapper {
-  padding-left: 0px;
-  padding-right: 0px
+  padding-left: 0;
+  padding-right: 0;
 }
 
 .wrapper--b-margin {
   margin-bottom: 1rem;
+}
 
-  @atMixin atSmall {
+@media (min-width: 530px) {
+
+  .wrapper--b-margin {
     margin-bottom: 3.875rem;
   }
 }
 
 .page-section {
-    padding: 1.2rem 0;
+  padding: 1.2rem 0;
 }
 
 @media (min-width: 800px) {
@@ -619,10 +620,9 @@ a {
 }
 
 .headline {
-    font-weight: 300;
-    font-size: 1.9rem;
-    color: #2f5572;
-
+  font-size: 1.9rem;
+  font-weight: 300;
+  color: #2f5572;
 }
 
 @media (min-width: 530px) {
@@ -647,7 +647,7 @@ a {
 @media (min-width: 530px) {
 
   .headline--small {
-    font-size: 2.875rem;
+    font-size: 1.875rem;
   }
 }
 
@@ -659,6 +659,10 @@ a {
 
 .headline--light {
   font-weight: 100;
+}
+
+.headline strong {
+  font-weight: 400;
 }
 
 .headline--b-margin-small {
@@ -680,7 +684,7 @@ a {
 }
 
 .row--gutters {
-  padding-right: -65px;
+  margin-right: -65px;
 }
 
 .row--gutters > div {/* select all direct children */
@@ -694,7 +698,7 @@ a {
 @media (min-width: 800px) {
 
   .row__b-margin-until-medium {
-    margin-bottom: 0rem;
+    margin-bottom: 0;
   }
 
   .row__medium-4 {
@@ -719,8 +723,11 @@ a {
 .generic-content-container p {
   line-height: 1.65;/* doesn't need units */
   margin: 1.8rem 0;
+}
 
-  @mixn atSmall {
+@media (min-width: 530px) {
+
+  .generic-content-container p {
     font-size: 1.125rem;
   }
 }
