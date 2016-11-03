@@ -7,3 +7,12 @@ img {
     max-width: 100%;
     height: auto;
 }
+
+* {
+    /* avoid browser's default paddings and margins setting to 0px */
+    box-sizing: border-box;
+}
+
+a {
+    color: $mainOrange;
+}
