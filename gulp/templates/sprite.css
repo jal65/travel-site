@@ -1,0 +1,7 @@
+{{#shapes}}
+  .icon--{{base}} {
+    width: {{width.outer}}px;
+    height: {{height.outer}}px;
+    backgound-image: url('/temp/sprite/css/{{{sprite}}}');
+    background-positiom: {{position.relative.xy}};
+  }{{/shapes}}
