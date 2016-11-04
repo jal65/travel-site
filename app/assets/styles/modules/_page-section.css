@@ -9,7 +9,7 @@
     padding-bottom: 0;
 
     @mixin atMedium {
-      padding: 4.5rem 0;
+      padding-bottom: 4.5rem;
     }
   }
 
@@ -17,13 +17,13 @@
     padding-bottom: 0;
 
     @mixin atLarge {
-      padding: 4.5rem 0;
+      padding-bottom: 4.5rem;
     }
   }
 
-
   &--blue {
-    color: $mainBlue;
+    background-color: $mainBlue;
+    color: #FFF;
   }
 
   &--testimonials {
@@ -34,4 +34,5 @@
       background-size: cover;
     }
   }
+
 }

@@ -12,7 +12,7 @@
   }
 
   &--blue {
-    font-weight: $mainBlue;
+    color: $mainBlue;
   }
 
   &__icon {
@@ -23,11 +23,12 @@
 
     @mixin atSmall {
       position: relative;
-      top:8px;
+      top: 8px;
       margin-right: .5rem;
-      margin-bottom: 0;
       margin-left: 0;
+      margin-bottom: 0;
       display: inline-block;
     }
   }
+
 }

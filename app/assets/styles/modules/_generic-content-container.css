@@ -11,7 +11,8 @@
   }
 
   p a {
-    font-weight: 700;
-        /* 400 = normal, not bold */
+    /* 400 = normal, not bold */
+    font-weight: 700; 
   }
+
 }
