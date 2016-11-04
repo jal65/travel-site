@@ -9,7 +9,6 @@ img {
 }
 
 * {
-  /* avoid browser's default paddings and margins setting to 0px */
   box-sizing: border-box;
 }
 

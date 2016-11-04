@@ -16,7 +16,7 @@
   }
 
   &__icon {
-    display: block; /* drops to new line */
+    display: block;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: .6rem;

@@ -3,10 +3,6 @@
   position: relative;
 
   &__image {
-    /* by default images are treated as in-line level elements 00 similar
-      to line of text so spaces are added to both extremes.
-      Setting as block level element those spaces are eliminated.
-    */
     display: block;
   }
 
@@ -14,10 +10,8 @@
     padding-top: 88px;
     position: absolute;
     top: 50%;
-    left: 0;
-    /* center text vert. */
     transform: translateY(-50%);
-    /* center text hor. */
+    left: 0;
     width: 100%;
     text-align: center;
 

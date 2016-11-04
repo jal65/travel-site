@@ -19,17 +19,14 @@
   }
 
   &--gutters > div {
-    /* select all direct children */
     padding-right: 65px;
   }
 
   &--gutters-large > div {
-    /* select all direct children */
     padding-right: 100px;
   }
 
   &--gutters-small > div {
-    /* select all direct children */
     padding-right: 45px;
   }
 
