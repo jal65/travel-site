@@ -5,7 +5,7 @@ module.exports = {
     filename: "App.js"
   },
   module: {
-    loaders:[
+    loaders: [
       {
         loader: 'babel',
         query: {
